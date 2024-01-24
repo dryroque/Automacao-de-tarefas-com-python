@@ -18,9 +18,10 @@ atual = round(fechamento[-1], 2)
 
 #enviar o e-mail automaticamente
 #pausa de dois segundos entre os passos
-pyautogui.PAUSE = 6
+pyautogui.PAUSE = 4
+
 #abrir navegador
-pyautogui.click(x=1239, y=2)
+pyautogui.click(x=771, y=740)
 
 #abrir uma nova aba(ctr + t)
 pyautogui.hotkey("ctrl", "t")
@@ -31,7 +32,7 @@ pyautogui.hotkey("ctrl", "v")
 pyautogui.hotkey("enter")
 
 #clicar no botao escrever
-pyautogui.click(x=1512, y=159)
+pyautogui.click(x=117, y=189)
 
 #digitar os dados do email
 pyperclip.copy(email)
@@ -59,5 +60,5 @@ Segue, conforme solicitado, as análises dos últimos {periodo} da ação {ticke
 
 pyperclip.copy(mensagem)
 pyautogui.hotkey("ctrl", "v")
-pyautogui.click(x=2649, y=1010)
+pyautogui.click(x=841, y=689)
 print("E-mail enviado com sucesso")

@@ -2,7 +2,7 @@ from pynput import mouse
 
 #buscando as coordenadas da tela do computador
 def on_click(x, y, button, pressed):
-    if not pressed and button == mouse.Button.middle:
+    if not pressed and button == mouse.Button.left:
         print(x, y)
 
 #fazendo o click esquerdo do mouse
